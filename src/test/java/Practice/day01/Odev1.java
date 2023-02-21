@@ -1,4 +1,4 @@
-package Practice;
+package Practice.day01;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,13 +19,14 @@ public class Odev1 {
         // go to url : https://www.techlistic.com/p/selenium-practice-form.html
         driver.get("https://www.techlistic.com/p/selenium-practice-form.html");
         driver.findElement(By.id("ez-accept-all")).click();
-        driver.navigate().refresh();
+      //  driver.navigate().refresh();
         //        fill the firstname
         driver.findElement(By.name("firstname")).sendKeys("Sevil");
         //        fill the lastname
         driver.findElement(By.name("lastname")).sendKeys("Karan");
         //        check the gender
         JavascriptExecutor jse = (JavascriptExecutor)driver;
+        //jse.executeScript("window.scrollTo(0,975.5555419921875)");
         jse.executeScript("window.scrollTo(0,675.5555419921875)");
       //  jse.executeScript("window.scrollBy(0,350)");
        // Thread.sleep(3000);
