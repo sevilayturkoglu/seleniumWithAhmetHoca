@@ -11,12 +11,7 @@ import java.util.List;
 public class C06_AutomationExercises {
     /*
     1- Bir test class’i olusturun ilgili ayarlari yapin
-
-
-
-
-
-     */
+*/
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
         WebDriver driver=new ChromeDriver();

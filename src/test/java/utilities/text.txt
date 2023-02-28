@@ -1,0 +1,15 @@
+
+SIMDIYE KADAR TESTING YAPTIGIMIZ TEST INTERNET SITELERI:
+
+https://www.automationexercise.com/
+https://the-internet.herokuapp.com/add_remove_elements/
+https://www.diemol.com/selenium-4-demo/relative-locators-demo.html
+http://zero.webappsecurity.com
+https://www.bestbuy.com/
+https://demoqa.com/droppable
+https://html.com/tags/iframe/
+https://demoqa.com/webtables
+http://webdriveruniversity.com/index.html
+https://www.techlistic.com/p/selenium-practice-form.html")
+
+https://www.udemy.com/course/istqb-foundation-level-ctfl_syl-2018-exams-2023/learn/quiz/5791230#overview       UDEMI ISTQB site

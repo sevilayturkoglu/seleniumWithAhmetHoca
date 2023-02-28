@@ -1,4 +1,4 @@
-package day06_window_iframe_actionClass;
+package PresentationSoruCozumBen;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import utilities.TestBase;
 
-public class SlaytSoruCozumBen extends TestBase {
+public class ActionSlaytSoruCozumBen extends TestBase {
     @Test
     public void test() {
     //Yeni bir class olusturalim: MouseActions3

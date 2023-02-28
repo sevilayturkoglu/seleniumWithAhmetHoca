@@ -1,4 +1,4 @@
-package day06_window_iframe_actionClass;
+package PresentationSoruCozumBen;
 import com.beust.ah.A;
 import org.junit.Assert;
 import org.junit.Test;
@@ -43,6 +43,7 @@ public class GetWindowHandleGuzelllll extends TestBase {
         String expectUrl = "https://www.amazon.com/";
         bekle(1);
         Assert.assertEquals("yoooookkk", expectUrl, actualUrl);
+
         Set<String> windowHandles = driver.getWindowHandles();
         for (String each : windowHandles
         ) {
