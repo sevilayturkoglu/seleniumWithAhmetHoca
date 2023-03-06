@@ -14,10 +14,10 @@ import java.time.Duration;
 
 public class Q7 {
     /*..........Exercise1............
-    arama kutusuna "Brave Heart" yazip, cikan sonuc sayisini yazdirin
-    arama kutusuna "Harry Potter" yazip, cikan sonuc sayisini yazdirin
-    AfterClass ile kapatin.
-     */
+     arama kutusuna "Brave Heart" yazip, cikan sonuc sayisini yazdirin
+     arama kutusuna "Harry Potter" yazip, cikan sonuc sayisini yazdirin
+     AfterClass ile kapatin.
+      */
     static WebDriver driver;
     WebElement searchBox;
     @BeforeClass
@@ -31,9 +31,9 @@ public class Q7 {
         driver.get("http://www.google.com");
         //
     }
-@Before
-        public void before(){
-   // driver.get("http://www.google.com");
+    @Before
+    public void before(){
+        // driver.get("http://www.google.com");
     }
     @Test
     public void test01(){

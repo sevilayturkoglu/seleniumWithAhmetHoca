@@ -9,21 +9,7 @@ import utilities.TestBase;
 public class C08_javascriptExecutorClick extends TestBase {
     @Test
     public void test(){
-        //wisequarteara git
-        driver.get("https://www.wisequarter.com");
-        driver.navigate().refresh();
-
-        WebElement otomasyonElementi= driver.findElement(By.xpath("(//img[@alt='Automation Engineer'])[1]"));
-       bekle(2);
-        JavascriptExecutor jse= (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].scrollIntoView()",otomasyonElementi);
-        bekle(2);
-        jse.executeScript("arguments[0].click()",otomasyonElementi);
-        bekle(2);
-        jse.executeScript("alert('JUnit Bitti')");
-
-
-        /*// wisequarter anasayfaya gidelim
+        // wisequarter anasayfaya gidelim
         driver.get("https://www.wisequarter.com");
         //refresh diyerek reklami gecin
         driver.navigate().refresh();
@@ -45,7 +31,7 @@ public class C08_javascriptExecutorClick extends TestBase {
         bekle(2);
 
         jse1.executeScript("alert('JUnit Bitti');");
-        bekle(3);*/
+        bekle(3);
 
     }
 }

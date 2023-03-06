@@ -54,7 +54,11 @@ public class C02_ReadExcel {
 
             ulkelerMap.put(ulke,baskent);
         }
-        System.out.println(ulkelerMap);
+        for (Map.Entry<String, String> stringStringEntry : ulkelerMap.entrySet()) {
+            System.out.println(stringStringEntry);
+        }
+
+      //  System.out.println(ulkelerMap);
         System.out.println(ulkelerMap.get("Syria"));
 
 

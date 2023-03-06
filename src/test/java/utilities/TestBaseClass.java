@@ -19,14 +19,14 @@ public class TestBaseClass {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
 
-    }
+    }/*
 
     @AfterClass
     public static void teardown() {
         driver.quit();
-    }
+    }*/
 
-    public void bekle(int saniye) {//try catch alinca artik bir daha exception firlatma istemeyecek,more action ile try cach yaptik kisaca
+    public  void bekle(int saniye) {//try catch alinca artik bir daha exception firlatma istemeyecek,more action ile try cach yaptik kisaca
         try {
             Thread.sleep(saniye*1000);
         } catch (InterruptedException e) {
