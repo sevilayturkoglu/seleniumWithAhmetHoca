@@ -85,23 +85,19 @@ public class KiwiBen {
 
         // Sadece aktarmasiz ucuslar olarak filtreleme yapalim ve en ucuz secenegine tiklayalim
 
-        WebElement aktarma= driver.findElement(By.xpath("(//*[.='Aktarmasız (direkt)'])[3]"));
-      aktarma.click();
-      Thread.sleep(3000);
+        driver.findElement(By.xpath("(//*[.='Aktarmasız (direkt)'])[3]")).click();
+       Thread.sleep(3000);
 
-
-        //driver.findElement(By.xpath("//span[.='En ucuz']")).click();
-        Actions actions=new Actions(driver);
-        actions.moveToElement(driver.findElement(By.xpath("//span[.='En ucuz']"))).click().perform();
+       //driver.findElement(By.xpath("//span[.='En ucuz']")).click();
+        driver.findElement(By.xpath("//span[.='En ucuz']")).click();
 
 // Filtreleme yaptigimiz en ucuz ucusun fiyatini getirerek 5000 tl den kucuk oldgunu dogurlayalim
 
        String lowprices=driver.findElement(By.xpath("(//strong[@data-test='ResultCardPrice'])[1]")).getText();
         lowprices=lowprices.replaceAll("\\D","");
-        System.out.println(lowprices);
-        int doPrice=Integer.parseInt(lowprices);
-        System.out.println(doPrice);
-        Assert.assertTrue(doPrice<5000);
+        int actualPrice=Integer.parseInt(lowprices);
+        int expectedPrice=5000;
+       Assert.assertTrue(actualPrice<expectedPrice);
 
 
 
